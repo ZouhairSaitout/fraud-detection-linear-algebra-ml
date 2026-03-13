@@ -90,7 +90,3 @@ Le rappel compte plus que la précision en détection de fraude.Rater une fraude
 Les données sont synthétiques. La sparsité, le taux de fraude et la structure des features sont tous contrôlés. Ça rend les expériences reproductibles et les maths propres, mais les chiffres ne se transfèrent pas directement à de vraies données transactionnelles. Le dataset Kaggle sur la fraude par carte de crédit serait l'étape suivante évidente.
 
 Les solveurs itératifs (Jacobi/GS/SOR) sont ici principalement pédagogiques. En pratique, on utiliserait le gradient conjugué (`scipy.sparse.linalg.cg`) pour ce type de système. L'intérêt est de comprendre pourquoi certains solveurs convergent et d'autres non, pas de les défendre pour un usage en production.
-
----
-
-
