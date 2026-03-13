@@ -3,7 +3,7 @@ import numpy as np
 
 # Jacobi
 
-def jacobi_sparse_numba(data, indices, indptr, b, max_iter=500, tol=1e-6):
+def jacobi_sparse(data, indices, indptr, b, max_iter=500, tol=1e-6):
    
     """
     Solveur Jacobi opérant sur des matrices au format CSR.
@@ -50,7 +50,7 @@ def jacobi_sparse_numba(data, indices, indptr, b, max_iter=500, tol=1e-6):
 
 # Gauss-Seidel
 
-def gauss_seidel_numba(data, indices, indptr, b, max_iter=500, tol=1e-6):
+def gauss_seidel(data, indices, indptr, b, max_iter=500, tol=1e-6):
     
     """
     Solveur Gauss-Seidel opérant sur des matrices au format CSR.
@@ -97,7 +97,7 @@ def gauss_seidel_numba(data, indices, indptr, b, max_iter=500, tol=1e-6):
 # Successive Over-Relaxation (SOR)
 
 
-def sor_numba(data, indices, indptr, b, w=1.2, max_iter=500, tol=1e-6):
+def sor(data, indices, indptr, b, w=1.2, max_iter=500, tol=1e-6):
    
     """
     Solveur SOR (Successive Over-Relaxation) opérant sur des matrices au format CSR.
