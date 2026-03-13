@@ -93,18 +93,4 @@ Les solveurs itératifs (Jacobi/GS/SOR) sont ici principalement pédagogiques. E
 
 ---
 
-## Installation
 
-```bash
-git clone https://github.com/ZouhairSaitout/fraud-detection-linear-algebra-ml.git
-cd fraud-detection-linear-algebra-ml
-pip install numpy scipy matplotlib scikit-learn
-```
-
-```bash
-python eda.py                  # analyse exploratoire
-python benchmark.py            # comparaison des solveurs
-python logistic_regression.py  # entraînement et évaluation
-python predict.py              # pipeline d'inférence complet
-python plots.py                # courbes de convergence et de scalabilité
-```
