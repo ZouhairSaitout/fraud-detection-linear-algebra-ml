@@ -19,9 +19,9 @@ def generate_transactions(n_transactions=5000, n_features=200, density=0.01):
     """
   
     X = sparse.random(n_transactions, n_features, density=density, format="csr",
-                      random_state=13)
+                      random_state=42)
 
-    rng = np.random.default_rng(13)
+    rng = np.random.default_rng(42)
     true_weights = rng.standard_normal(n_features)
 
     scores = X.dot(true_weights)
